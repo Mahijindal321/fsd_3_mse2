@@ -168,7 +168,7 @@ function Dashboard() {
 
   const searchItem = async () => {
     const res = await axios.get(
-      `http://localhost:5000/api/items/search?name=${search}`,
+      `https://fsd-3-mse2-backend.onrender.com/api/items/search?name=${search}`,
       { headers: { Authorization: token } }
     );
     setItems(res.data);

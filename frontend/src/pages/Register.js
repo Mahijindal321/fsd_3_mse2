@@ -10,7 +10,7 @@ function Register() {
 
   const submit = async () => {
     try {
-      await axios.post("http://localhost:5000/api/auth/register", data);
+      await axios.post("https://fsd-3-mse2-backend.onrender.com/api/auth/register", data);
       alert("Registered successfully");
       window.location = "/";
     } catch {

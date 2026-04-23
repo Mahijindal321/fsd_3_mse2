@@ -6,7 +6,7 @@ function Login() {
 
   const submit = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", data);
+      const res = await axios.post("https://fsd-3-mse2-backend.onrender.com/api/auth/login", data);
       localStorage.setItem("token", res.data.token);
       window.location = "/dashboard";
     } catch (err) {
